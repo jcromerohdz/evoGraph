@@ -64,3 +64,11 @@ n
  nodo2 = Node(n2[0]['n'])
 relation_person_individual = Relationship(nodo1, "LIKES", nodo2)
 graph.create(relation_person_individual)
+
+node1 = graph.find_one('Person', property_value='Christian')
+
+node2 = graph.find_one('Individual', property_value=1)
+
+relation_person_individual = Relationship(nodo1, "LIKES", nodo2)
+
+graph.create(relation_person_individual)
