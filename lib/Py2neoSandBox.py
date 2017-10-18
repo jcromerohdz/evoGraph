@@ -62,3 +62,5 @@ n
  n2
 [{u'n': (aa5c675:Individual {element_type:"Individual",id:1})}]
  nodo2 = Node(n2[0]['n'])
+relation_person_individual = Relationship(nodo1, "LIKES", nodo2)
+graph.create(relation_person_individual)
